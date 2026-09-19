@@ -67,7 +67,7 @@ dependencies {
     }
     implementation 'com.github.ozodrukh:CircularReveal:1.3.1'
 
-    def sCommon_Version = '970617f38a'
+    def sCommon_Version = 'd532608ca4b15c4935ca33b66d7770f632febed4'
     implementation "com.github.sunilpaulmathew.sCommon:adapters:${sCommon_Version}"
     implementation "com.github.sunilpaulmathew.sCommon:credits:${sCommon_Version}"
     implementation "com.github.sunilpaulmathew.sCommon:crashreporter:${sCommon_Version}"
