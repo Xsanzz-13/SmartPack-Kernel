@@ -221,6 +221,7 @@ public class Voltage {
         } else {
             run(Control.write(freq + " "
                     + Utils.strToInt(voltage) * mOffset.get(PATH),
+                    PATH + freq),
                     PATH + freq, context);
         }
     }
