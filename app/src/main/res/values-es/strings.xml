@@ -1,0 +1,541 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="checking_info">"Revisando informacion"</string>
+    <string name="checking_root">"Verificando acceso root"</string>
+    <string name="searching_busybox">"Buscando busybox"</string>
+    <string name="collecting_info">"Recolectando informacion"</string>
+    <string name="no_root">"No hay acceso root"</string>
+    <string name="no_busybox">"Sin Busybox"</string>
+    <string name="open">"Abriendo %s"</string>
+
+    <!-- Security -->
+    <string name="select_picture">"Seleccionar Imagen"</string>
+    <string name="no_picture">"No hay imagen"</string>
+    <string name="went_wrong">"¡Algo salió mal!"</string>
+    <string name="press_back_again_exit">"Presione de nuevo para salir"</string>
+    <string name="ok">"OK"</string>
+    <string name="yes">"Si"</string>
+    <string name="unknown">"Desconocido"</string>
+    <string name="warning">"¡Advertencia!"</string>
+    <string name="apply_on_boot">"Aplicar al inicio"</string>
+    <string name="apply_on_boot_text">"Aplicando configuraciones en %d segundos."</string>
+    <string name="apply_on_boot_complete">"Ajustes aplicados."</string>
+    <string name="apply_on_boot_canceled">"La configuración ha sido cancelada."</string>
+    <string name="not_in_range">"Fuera de rango"</string>
+    <string name="options">"Opciones"</string>
+    <string name="more">"Mas"</string>
+
+    <!-- Permissions Denied -->
+    <string name="permission_denied_write_storage">"Permission denied for writing to storage!"</string>
+
+    <!-- Editor -->
+    <string name="save">"Guardar"</string>
+
+    <!-- Units -->
+    <string name="mhz">"MHz"</string>
+    <string name="celsius">"°C"</string>
+    <string name="fahrenheit">"°F"</string>
+    <string name="mb">"MB"</string>
+    <string name="ms">"ms"</string>
+    <string name="mv">"mV"</string>
+    <string name="min">"min"</string>
+    <string name="mah">"mAh"</string>
+    <string name="ma">"mA"</string>
+    <string name="kb">"kB"</string>
+    <string name="px">"px"</string>
+
+    <!-- Headers -->
+    <string name="statistics">"Estadísticas"</string>
+    <string name="kernel">"Kernel"</string>
+    <string name="tools">"Herramientas"</string>
+    <string name="other">"Otros"</string>
+
+    <!-- Menus -->
+    <string name="overall">"En general"</string>
+    <string name="device">"Dispositivo"</string>
+    <string name="memory">"Memoria"</string>
+    <string name="inputs">"Entradas"</string>
+    <string name="cpu">"CPU"</string>
+    <string name="cpu_hotplug">"CPU Hotplug"</string>
+    <string name="cpu_voltage">"Voltaje de CPU"</string>
+    <string name="gpu">"GPU"</string>
+    <string name="thermal">"Thermal"</string>
+    <string name="battery">"Bateria"</string>
+    <string name="sound">"Sonido"</string>
+    <string name="screen">"Pantalla"</string>
+    <string name="wake">"Gestos"</string>
+    <string name="led">"Pantalla y LED"</string>
+    <string name="io_scheduler">"I/O Scheduler"</string>
+    <string name="ksm">"KSM"</string>
+    <string name="uksm">"UKSM"</string>
+    <string name="lmk">"Asesino de memoria RAM"</string>
+    <string name="virtual_memory">"Memoria Virtual"</string>
+    <string name="entropy">"Entropía"</string>
+    <string name="misc">"Misc"</string>
+    <string name="custom_controls">"Controles personalizados"</string>
+    <string name="backup">"Copia de seguridad"</string>
+    <string name="build_prop_editor">"Editor buildprop"</string>
+    <string name="profile">"Perfil"</string>
+    <string name="script_manger">"Administración de scritps"</string>
+    <string name="on_boot">"En el arranque"</string>
+    <string name="settings">"Ajustes"</string>
+    <string name="smartpack">"SmartPack"</string>
+    <string name="about">"Acerca de"</string>
+    <string name="contributors">"Contribuidores"</string>
+    <string name="faq">"FAQ"</string>
+
+    <!-- Overall -->
+    <string name="overall_summary">"Bienvenido a la página de inicio de SmartPack-Kernel Manager. Esta página proporciona información muy básica de su dispositivo. Las opciones avanzadas de ajuste del kernel se pueden encontrar en las páginas respectivas."</string>
+    <string name="cpu_times">"Tiempos de cpu"</string>
+    <string name="offline">"Deconectado"</string>
+    <string name="core">"Core %d"</string>
+    <string name="gpu_freq">"Frecuencia de la GPU"</string>
+    <string name="refresh">"Refrescar"</string>
+    <string name="reset">"Reiniciar"</string>
+    <string name="restore">"Restaurar"</string>
+    <string name="restore_sure_message">"Estás seguro de restaurar %s?"</string>
+    <string name="deep_sleep">"Sueño profundo"</string>
+    <string name="uptime">"Tiempo de actividad"</string>
+    <string name="error_frequencies">"Error al cargar frecuencias"</string>
+    <string name="unused_frequencies">"Frecuencias no utilizadas"</string>
+
+    <!-- Device -->
+    <string name="processor">"Procesador"</string>
+    <string name="vendor">"Vendor"</string>
+    <string name="features">"Características"</string>
+    <string name="ram">"RAM"</string>
+    <string name="android_version">"Versión de Android"</string>
+    <string name="android_api_level">"Android SDK"</string>
+    <string name="android_codename">"Nombre clave android"</string>
+    <string name="fingerprint">"Huella digital"</string>
+    <string name="build_display_id">"Pantalla ID"</string>
+    <string name="baseband">"Banda base"</string>
+    <string name="rom">"Sistema"</string>
+    <string name="hardware">"Hardware"</string>
+    <string name="architecture">"Arquitectura"</string>
+    <string name="treble_status">"Soporte de Proyecto Treble"</string>
+    <string name="gpu_lib">"Librerias de GPU"</string>
+
+    <!-- Inputs -->
+    <string name="bus">"Bus"</string>
+    <string name="product">"Producto"</string>
+    <string name="handlers">"Handlers"</string>
+
+    <!-- CPU -->
+    <string name="cores_singular">"%d nucleo"</string>
+    <string name="cores">"%d nucleos"</string>
+    <string name="cpu_usage">"Uso de CPU"</string>
+    <string name="cpu_usage_string">"%s Uso de CPU"</string>
+    <string name="no_offline_core">"No puedes desactivar este nucleo"</string>
+    <string name="cpu_max_freq">"Máxima frecuencia de CPU"</string>
+    <string name="cpu_max_freq_summary">"Establezca la frecuencia máxima a la que se escala la CPU."</string>
+    <string name="cpu_min_freq">"Frecuencia mínima del CPU"</string>
+    <string name="cpu_min_freq_summary">"Establezca la frecuencia mínima a la que se reduce la CPU."</string>
+    <string name="cpu_max_screen_off_freq">"Frecuencia máxima de pantalla apagada de la CPU"</string>
+    <string name="cpu_max_screen_off_freq_summary">"Establezca la frecuencia máxima que la CPU escala cuando la pantalla está apagada."</string>
+    <string name="cpu_governor">"Gobernador de CPU"</string>
+    <string name="cpu_governor_summary">"El gobernador de la CPU determina cómo se comporta la CPU en respuesta a los cambios en la carga de trabajo. Cambiar el regulador afectará la forma en que la CPU escala a través de los pasos de frecuencia disponibles para su CPU."</string>
+    <string name="cpu_governor_tunables">"Ajustes del Gobernador de CPU"</string>
+    <string name="governor_tunables_summary">"Los diversos elementos de configuración que dependen del gobernador."</string>
+    <string name="cpu_governor_tunables_read_error">"Error al leer el gobernador actual de la CPU.
+
+        Si está utilizando un dispositivo QCOM big.LITTLE, este es un problema conocido. El sistema obliga a la CPU a apagar los núcleos, por lo que es extremadamente difícil leer las estadísticas específicas de la CPU. Intente seleccionar esta opción nuevamente. La CPU a veces se niega a encender un núcleo."</string>
+    <string name="tunables_error">"%s no se puede configurar"</string>
+    <string name="manual">"Manual"</string>
+    <string name="mc_power_saving">"Ahorro de batería Multinucleo"</string>
+    <string name="mc_power_saving_summary">"Intente agrupar las tareas en el menor número posible de núcleos.."</string>
+    <string name="disabled">"Desactivado"</string>
+    <string name="enabled">"Activado"</string>
+    <string name="aggressive">"Agresivo"</string>
+    <string name="power_saving_wq">"Programe colas de trabajo en CPUs despiertas para ahorrar energía."</string>
+    <string name="cfs_scheduler_policy">"Política del planificador de CFS"</string>
+    <string name="cfs_scheduler_policy_summary">"La política decide el planificador CFS cómo equilibrar las tareas en diferentes unidades de CPU."</string>
+    <string name="cpu_quiet">"CPU silenciosa"</string>
+    <string name="cpu_quiet_summary">"CPUQuiet implementa políticas conectables para forzar núcleos de CPU en estado inactivo. Las políticas apropiadas ahorrarán energía sin perjudicar el rendimiento."</string>
+    <string name="cpu_quiet_governor">"CPUQuiet Governor"</string>
+    <string name="msm_limiter">"Limite MSM"</string>
+    <string name="msm_limiter_summary">"Habilitar MSM Limiter por neobuddy89."</string>
+    <string name="freq_control">"Control de frecuencia"</string>
+    <string name="freq_control_summary">"Permita que MSM Limiter controle las frecuencias de sus CPU."</string>
+
+    <!-- CPU Boost -->
+    <string name="cpu_boost">"CPU Boost"</string>
+    <string name="stune_boost">"Stune Boost"</string>
+    <string name="cpu_boost_settings">"Configuración de refuerzo de la CPU"</string>
+    <string name="debug_mask">"Máscara de depuración"</string>
+    <string name="debug_mask_summary">"Le permite activar la máscara de depuración para las operaciones."</string>
+    <string name="interval">"Intervalo"</string>
+    <string name="interval_summary">"Intervalo mínimo que se incrementa una CPU."</string>
+    <string name="sync_threshold">"Umbral de sincronización"</string>
+    <string name="sync_threshold_summary">"Cuando la carga de la CPU cruza el umbral preestablecido, la CPU actual se eleva a esta frecuencia."</string>
+    <string name="input_interval">"Intervalo de entrada"</string>
+    <string name="input_interval_summary">"Intervalo mínimo que se incrementa una CPU cuando se detecta una entrada."</string>
+    <string name="sched_boost_Input">"Impulso programado en entrada"</string>
+    <string name="input_boost_freq">"Frecuencia de refuerzo de entrada"</string>
+    <string name="input_boost_freq_core">"Núcleo de frecuencia de refuerzo de entrada %d"</string>
+    <string name="input_boost_freq_summary">"La frecuencia de la CPU se aumentará a esta frecuencia al detectar la entrada."</string>
+    <string name="wakeup_boost_summary">"Wakeup Boost es similar al input boost pero ocurre cuando la pantalla está encendida."</string>
+    <string name="hotplug_boost_summary">"Hotplug Boost es similar al impulso de entrada, pero ocurre cuando las CPU se conectan."</string>
+    <string name="touch_boost_summary">"Esto aumentará su velocidad mínima de CPU si toca la pantalla o presiona un botón."</string>
+    <string name="cpu_input_boost_summary">"Habilite CPU Input Boost, un controlador de impulso de CPU basado en eventos de Sultanxda."</string>
+    <string name="cpuiboost_duration">"Duración de Input Boost"</string>
+    <string name="cpuiboost_duration_summary">"Establecer la duración del refuerzo de entrada de la CPU"</string>
+    <string name="wake_boost_duration">"Wake Boost Duración"</string>
+    <string name="cluster_return_freq">"Frecuencia de retorno del clúster"</string>
+    <string name="dyn_stune_boost">"Refuerzo dinámico de aturdimiento"</string>
+    <string name="stune_boost_ms">"Stune Boost Duración"</string>
+    <string name="stune_boost_sett">"Stune Boost Ajustes"</string>
+    <string name="powerhal_tunables">"Power HAL Ajustes"</string>
+
+    <!-- CPU Hotplug -->
+    <string name="hotplug_warning">"¡Más de un sistema de conexión en caliente está habilitado! \ Utilice solo uno."</string>
+    <string name="mpdecision">"MPDecision"</string>
+    <string name="mpdecision_summary">"La solución de conexión en caliente de Qualcomm. Puede tener problemas con el cambio de frecuencias cuando esto está habilitado."</string>
+    <string name="intelliplug">"IntelliPlug"</string>
+    <string name="intelliplug_summary">"Un reemplazo en el núcleo para MPDecision de Qualcomm. Desarrollado por faux123."</string>
+    <string name="cpu_hotplug_profile_summary">"El número entre paréntesis indica la cantidad de núcleos en línea en cualquier momento."</string>
+    <string name="insanity">"InSaNiTy"</string>
+    <string name="balanced">"Balanceado"</string>
+    <string name="performance">"Rendimiento"</string>
+    <string name="eco_insanity">"Eco InSaNiTy"</string>
+    <string name="tri">"Tri"</string>
+    <string name="eco">"Ahorro"</string>
+    <string name="strict">"Estricto"</string>
+    <string name="eco_mode">"Modo ahorro"</string>
+    <string name="eco_mode_summary">"Modo ahorro de energía por IntelliPlug"</string>
+    <string name="hysteresis">"Hysteresis Value"</string>
+    <string name="hysteresis_summary">"Cuanto más bajo es, la respuesta más rápida."</string>
+    <string name="cpu_threshold_summary">"Cuanto más alto, menos CPU se utilizan."</string>
+    <string name="suspend">"Suspender"</string>
+    <string name="suspend_summary">"Evitar suspender."</string>
+    <string name="cpus_boosted">"CPUs potenciadas"</string>
+    <string name="cpus_boosted_summary">"Número máximo de CPU potenciadas al mismo tiempo."</string>
+    <string name="min_cpu_online">"Número mínimo de CPU en línea"</string>
+    <string name="min_cpu_online_summary">"Número mínimo de CPU que estarán en línea."</string>
+    <string name="max_cpu_online">"Número máximo de CPU en línea"</string>
+    <string name="max_cpu_online_summary">"Número máximo de CPU que estarán en línea."</string>
+    <string name="max_cpu_online_screen_off">"Número máximo de CPU con la pantalla apagada"</string>
+    <string name="max_cpu_online_screen_off_summary">"Número máximo de CPU que estarán en línea cuando la pantalla esté apagada."</string>
+    <string name="boost_lock_duration_summary">"Intervalo mínimo que se incrementa una CPU."</string>
+    <string name="down_lock_duration_summary">"Intervalo mínimo que una CPU se mantiene en línea."</string>
+    <string name="fshift">"FShift"</string>
+    <string name="lazyplug">"LazyPlug"</string>
+    <string name="possible_cpu_cores_summary">"Posibles núcleos de CPU que lazyplug puede usar."</string>
+    <string name="blu_plug">"Blu_Plug"</string>
+    <string name="blu_plug_summary">"Un reemplazo en el núcleo para MPDecision de Qualcomm. Desarrollado por el equipo de Code_Blue."</string>
+    <string name="powersaver_mode">"Modo ahorro de bateria"</string>
+    <string name="powersaver_mode_summary">"Establece 1 CPU máxima en línea con frecuencia @ 1728MHz."</string>
+    <string name="up_threshold_summary">"Sobre este umbral, el conductor pondrá un núcleo más en línea."</string>
+    <string name="up_timer_cnt_summary">"Temporizador de control para CPU en marcha."</string>
+    <string name="down_timer_cnt_summary">"Temporizador de control para CPUs inactivas."</string>
+    <string name="mako_hotplug">"Mako Hotplug"</string>
+    <string name="mako_hotplug_summary">"Un reemplazo en el núcleo para MPDecision de Qualcomm. Desarrollado por franciscofranco."</string>
+    <string name="cpus_on_touch_summary">"Número de CPU en línea al tocar la pantalla o al presionar el botón."</string>
+    <string name="cpu_freq_unplug_limit">"Límite de desconexión de frecuencia de CPU"</string>
+    <string name="first_level_summary">"El umbral para conectar en línea todas las CPU."</string>
+    <string name="load_threshold_summary">"El umbral para conectar en línea todas las CPU."</string>
+    <string name="min_time_cpu_online">"Tiempo mínimo de la CPU en línea"</string>
+    <string name="screen_off_single_cpu">"Pantalla apagada CPU individual"</string>
+    <string name="screen_off_single_cpu_summary">"Use solo una CPU cuando la pantalla esté apagada."</string>
+    <string name="delay_summary">"Tiempo entre cheques."</string>
+    <string name="msm_hotplug">"MSM Hotplug"</string>
+    <string name="msm_hotplug_summary">"Un reemplazo en el núcleo para MPDecision de Qualcomm. Desarrollado por myfluxi."</string>
+    <string name="history_size_summary">"Número de muestras tomadas en consideración para la carga promedio entre las CPU. Inferior significa más rápido/más errático."</string>
+    <string name="update_rate_summary">"Intervalo entre tomar muestras de carga en las CPU. Inferior significa más rápido/más errático."</string>
+    <string name="fast_lane_load">"Fast Lane Load"</string>
+    <string name="alucard_hotplug">"Alucard Hotplug"</string>
+    <string name="io_is_busy">"IO is Busy"</string>
+    <string name="msm_mpdecision_hotplug">"MSM MPDecision Hotplug"</string>
+    <string name="bricked_hotplug">"Bricked Hotplug"</string>
+    <string name="boost_frequency_core">"Boost Frequency Core %d"</string>
+    <string name="start_delay">"Retardo de inicio"</string>
+    <string name="start_delay_summary">"Tiempo de retraso en milisegundos hasta que el HotPlug comienza a trabajar"</string>
+    <string name="pause">"Pausa"</string>
+    <string name="core_control">"Control del nucleo"</string>
+    <string name="hcube">"H-Cube"</string>
+    <string name="offline_delay">"Retraso fuera le línea"</string>
+    <string name="online_delay">"Retraso en línea"</string>
+    <string name="msm_sleeper">"MSM Sleeper"</string>
+    <string name="aio_hotplug">"AiO Hotplug"</string>
+    <string name="adv_sett">"Ajustes avanzados"</string>
+    <string name="thunder_plug">"ThunderPlug"</string>
+    <string name="dual_core_mode">"Modo Dual-Core"</string>
+    <string name="quad_core_mode">"Modo Quad-Core"</string>
+    <string name="suspend_cpus">"Suspend CPUs"</string>
+
+    <!-- CPU Voltage -->
+
+    <!-- GPU -->
+    <string name="frequencies">"Frecuencias"</string>
+    <string name="gpu_2d_freq">"Frecuencia 2D de GPU"</string>
+    <string name="gpu_2d_max_freq">"Frecuencia 2D máximo de GPU"</string>
+    <string name="gpu_max_freq">"Máxima frecuencia de GPU"</string>
+    <string name="gpu_max_freq_summary">"Establezca la frecuencia máxima que la GPU escala."</string>
+    <string name="gpu_min_freq">"Frecuencia mínima de la CPU"</string>
+    <string name="gpu_min_freq_summary">"Establezca la frecuencia mínima a la que se reduce la GPU."</string>
+    <string name="gpu_governor">"Gobernador de la GPU"</string>
+    <string name="gpu_governor_summary">"Establece el gobernador de la GPU."</string>
+    <string name="gpu_governor_tunables">"Ajustes del gobernador de la GPU"</string>
+    <string name="simple_gpu_algorithm">"Algoritmo de GPU simple"</string>
+    <string name="adrenoboost">"AdrenoBoost"</string>
+    <string name="workload">"Carga de trabajo"</string>
+    <string name="gpu_powelevel">"Nível de poder de GPU"</string>
+
+    <!-- Thermal -->
+    <string name="thermal_info">"Utilice solo un controlador térmico de las siguientes opciones, el uso de varios al mismo tiempo puede causar un comportamiento inesperado."</string>
+    <string name="thermald">"Regulador de temperatura"</string>
+    <string name="intellithermal">"Intellithermal"</string>
+    <string name="intellithermal_summary">"An in-kernel replacement for Qualcomm's Thermald. Developed by faux123."</string>
+    <string name="thermal_debug_mask_summary">"Allows you to activate debug mask for thermal operations."</string>
+    <string name="vdd_restriction">"Restricción de VDD"</string>
+    <string name="freq_throttle_temp_summary">"Temperature to start throttling frequencies."</string>
+    <string name="cpu_throttle_temp_summary">"Temperatura para empezar a apagar las CPUs"</string>
+    <string name="immediately_limit_stop">"Immediately Limit Stop"</string>
+    <string name="poll">"Poll"</string>
+    <string name="temp_safety">"Temperatura segura"</string>
+    <string name="temp_throttle_summary">"SoC temperature limit toggle."</string>
+    <string name="temp_limit">"Límite de temperatura"</string>
+    <string name="temp_limit_min_freq">"Temperature Limit Minimum Frequency"</string>
+    <string name="temp_limit_min_freq_summary">"The thermal will use this frequency to throttle the maximum temperature."</string>
+    <string name="usermax_freq">"User Maximum Frequency"</string>
+
+    <!-- Battery -->
+    <string name="capacity">"Capacidad"</string>
+    <string name="blx">"Extender bateria"</string>
+    <string name="blx_summary">"Establezca un límite para la capacidad a la que se cargará la batería, escriba un valor entre 0 y 100."</string>
+    <string name="charging_enable">"Activar la carga"</string>
+    <string name="charging_enable_summary">"¡Advertencia! La carga se detendrá inmediatamente si se desactiva"</string>
+    <string name="thunder_charge">"Thunder Charge"</string>
+
+    <!-- Advanced Charge Control Interface -->
+    <string name="acci">"Advanced Charge Control Interfaz"</string>
+    <string name="fast_charge">"Carga rápida"</string>
+    <string name="fast_charge_summary">"Si se activa, el dispositivo se cargará más rápido cuando se conecte al USB. Selecciona el modo personalizado para cargar tu dispositivo en un nivel personalizado. Vuelve a conectar el cargador cuando cambies estas opciones."</string>
+    <string name="otg_enable_summary">"Activa permanente el modo USB On-The-Go (OTG) en dispositivos OnePlus soportados"</string>
+    <string name="usb_fast_charge_summary">"El dispositivo cargará más rápido cuando se conecte con USB. Reconecte su cargador cuando cambie esta opción."</string>
+    <string name="charge_level_ac">"Nivel de carga (AC)"</string>
+    <string name="charge_level_usb">"Nivel de carga (USB)"</string>
+    <string name="charge_level_wireless">"Nivel de carga (inalámbrico)"</string>
+    <string name="charge_level_summary">"Elija su nivel (mA)"</string>
+
+    <!-- Sound -->
+    <string name="sound_control">"Control de sonido"</string>
+    <string name="headphone_gain">"Ganancia del audífono"</string>
+    <string name="speaker_gain">"Ganancia del altavoz"</string>
+    <string name="microphone_gain">"Ganancia del micrófono"</string>
+    <string name="faux_sound">"Faux Sound"</string>
+    <string name="lock_mic_gain">"Bloquear ganancia del micrófono"</string>
+    <string name="per_channel_controls">"Controles por canal"</string>
+    <string name="privacy_mode">"Modo privado"</string>
+
+    <!-- Screen -->
+    <string name="screen_color">"Colores de pantalla"</string>
+    <string name="red">"Rojo"</string>
+    <string name="green">"Verde"</string>
+    <string name="blue">"Azul"</string>
+    <string name="white">"Blanco"</string>
+    <string name="flash_led">"Intensidad de flash led"</string>
+    <string name="yellow">"Amarillo"</string>
+    <string name="min_rgb">"Valor mínimo de RGB"</string>
+    <string name="invert_screen">"Pantalla Invertida"</string>
+    <string name="saturation_intensity">"Intensidad de saturacin"</string>
+    <string name="grayscale_mode">"Modo escala de grises"</string>
+    <string name="screen_hue">"Tono de pantalla"</string>
+    <string name="screen_hue_summary">"Es posible que tenga problemas con el SoC MSM8x26 al establecer un valor alto."</string>
+    <string name="screen_value">"Valor de pantalla"</string>
+    <string name="screen_contrast">"Contraste de pantalla"</string>
+    <string name="high_brightness_mode">"Modo de alto brillo"</string>
+    <string name="srgb">"sRGB"</string>
+    <string name="gamma">"Gamma"</string>
+    <string name="red_mids">"Red Mids"</string>
+    <string name="contrast">"Contraste"</string>
+    <string name="brightness">"Brillo"</string>
+    <string name="red_negative">"Red Negative"</string>
+    <string name="lcd_backlight">"Luz de fondo LCD"</string>
+    <string name="gamma_profiles_summary">"Después de seleccionar un perfil, por favor apague y encienda."</string>
+    <string name="min_brightness">"Brillo mínimo"</string>
+    <string name="max_brightness">"Brillo máximo"</string>
+    <string name="mdnie_global_controls">"mDNIe global controls"</string>
+
+    <!-- K-lapse -->
+    <string name="start_time">"Iniciar"</string>
+    <string name="end_time">"Terminar"</string>
+    <string name="nightmode_rgb">"Colores del Modo noche"</string>
+    <string name="pulse_freq">"Frecuencia de pulso"</string>
+    <string name="pulse_freq_summary">"The number of milliseconds after which klapse_pulse is called."</string>
+
+    <string name="profile_exists">"¡Un perfil llamado %s existe actualmente! Abortando"</string>
+
+    <!-- Wake -->
+    <string name="dt2w_summary">"Enciende tu dispositivo con un doble toque en la pantalla"</string>
+    <string name="center">"Centrar"</string>
+    <string name="full">"Completo"</string>
+    <string name="lenient_summary">"Only require 1st and 4th button to trigger Sweep2Wake."</string>
+    <string name="t2w_summary">"Wake up your device by tapping the screen."</string>
+
+    <!-- LED -->
+    <string name="led_notification">"LED de notificaciones"</string>
+
+    <!-- I/O Scheduler -->
+    <string name="internal_storage">"Almacenamiento interno"</string>
+    <string name="external_storage">"Almacenamiento externo"</string>
+    <string name="scheduler_summary">"Establezca el algoritmo activo de elevador de E/S. El Programador decide cómo manejar las solicitudes de E/S."</string>
+    <string name="scheduler_tunable_summary">"Los diversos elementos de configuración que dependen del planificador."</string>
+    <string name="read_ahead_summary">"El valor de lectura anticipada en la memoria del teléfono."</string>
+    <string name="rotational_summary">"Tratar el dispositivo como almacenamiento rotativo."</string>
+    <string name="iostats_summary">"Mantener estadísticas de E/S para este dispositivo de almacenamiento. La desactivación interrumpirá las aplicaciones de monitoreo de E/S."</string>
+    <string name="add_random_summary">"Dibuje entropía del almacenamiento giratorio (rotacional)."</string>
+    <string name="rq_affinity_summary">"Intente que las solicitudes del planificador se completen en el núcleo de la CPU de donde fueron hechas. Los valores más altos son más agresivos."</string>
+    <string name="nomerges_summary">"Esto permite al usuario deshabilitar la lógica de búsqueda relacionada con las solicitudes de fusión de E/S en la capa de bloque."</string>
+    <string name="nr_requests_summary">"Esto controla cuántas solicitudes pueden asignarse en la capa de bloque para solicitudes de lectura o escritura."</string>
+
+    <!-- Kernel Samepage Merging -->
+
+    <!-- Low Memory Killer -->
+    <string name="foreground_app">"Aplicaciones en primer plano"</string>
+    <string name="visible_app">"Aplicaciónes visibles"</string>
+    <string name="secondary_server">"Servidor secundario"</string>
+    <string name="hidden_app">"Aplicaciónes ocultas"</string>
+    <string name="content_providers">"Proveedores de contenido"</string>
+    <string name="empty_app">"Aplicaciónes vacias"</string>
+    <string name="very_light">"Muy ligero"</string>
+    <string name="light">"Ligero"</string>
+    <string name="medium">"Medio"</string>
+
+    <!-- Wakelock -->
+
+    <!-- Virtual Memory -->
+    <string name="zram_algo">"Z-RAM Algoritmo"</string>
+    <string name="zram_algo_summary">"Establecer el algoritmo de compresión Z-RAM predeterminado."</string>
+    <string name="zram_algo_warning">"El tamaño del disco Z-RAM se reducirá temporalmente a '0'. Este proceso puede tener serios impactos en algunos dispositivos."</string>
+    <string name="disksize_summary">"Intenta aumentar el rendimiento evitando la paginación en el almacenamiento físico, en lugar de usar un dispositivo virtual comprimido en RAM. La paginación se realiza en la RAM hasta que sea necesario usar el espacio de intercambio en el almacenamiento físico."</string>
+    <string name="zswap_summary">"ZSwap es un caché comprimido ligero para páginas de intercambio. Toma páginas que están en proceso de intercambio e intenta comprimirlas en un grupo de memoria basada en RAM asignada dinámicamente. Zswap básicamente intercambia ciclos de CPU por E/S de intercambio potencialmente reducidas."</string>
+    <string name="memory_pool_summary">"Porcentaje de agrupación de memoria de memoria principal que se puede usar como caché de página comprimida."</string>
+    <string name="maximum_compression_ratio">"Máximo radio de comprensión"</string>
+    <string name="maximum_compression_ratio_summary">"Relación de compresión máxima, como porcentaje, para una página comprimida aceptable. Cualquier página que no se comprima al menos en esta proporción será rechazada"</string>
+
+    <!-- Entropy -->
+    <string name="available">"Disponible"</string>
+
+    <!-- Misc -->
+    <string name="android_logger">"Registro de Android"</string>
+    <string name="android_logger_summary">"Activar/desactivar el registro de Android"</string>
+    <string name="printk_logger_summary">"Activar/desactivar el registro de Linux PrintK"</string>
+    <string name="crc_summary">"CRC es un mecanismo destinado a prevenir la corrupción de datos cuando está habilitado. Los bloques de datos pueden perder hasta el 30% de su rendimiento."</string>
+    <string name="fsync">"Fsync"</string>
+    <string name="fsync_summary">"Inhabilite para un mejor rendimiento del sistema de archivos con el riesgo de pérdida de datos en caso de un bloqueo del sistema."</string>
+    <string name="dynamic_fsync">"Dynamic Fsync"</string>
+    <string name="dynamic_fsync_summary">"Cuando está habilitado y la pantalla está encendida, la operación fsync es asíncrona. Cuando la pantalla está apagada, esta operación se realiza sincrónicamente."</string>
+    <string name="gentlefairsleepers">"Gentle Fair Sleepers"</string>
+    <string name="gentlefairsleepers_summary">"Solo dé a los durmientes el 50% de su déficit de servicio. Deshabilitar esto puede ahorrar un poco de energía de la batería"</string>
+    <string name="power_suspend_mode">"Power Suspend Mode"</string>
+    <string name="power_suspend_state_summary">"Controlador de administración de energía del núcleo cuando la pantalla está apagada. Mejor ahorro de batería si está habilitado. Nota: Solo puede cambiar esta configuración si el Modo de suspensión de energía está en Modo de usuario."</string>
+    <string name="tcp_summary">"El Protocolo de control de transmisión es uno de los protocolos principales del conjunto de protocolos de Internet (IP), y es tan común que a menudo se denomina TCP/IP a todo el conjunto."</string>
+    <string name="leases_enable_summary">"Habilitar o deshabilitar las concesiones de archivos en todo el sistema"</string>
+    <string name="lease_break_time_summary">"El período de gracia que el kernel otorga a un proceso que tiene una concesión de archivo después de haber enviado una señal a ese proceso notificándole que otro proceso está esperando para abrir el archivo."</string>
+    <string name="auto_sync">"Sincronizacion automática de datos"</string>
+    <string name="auto_sync_summary">"Permita que las aplicaciones actualicen datos automáticamente.
+        Nota: se aplicará, independientemente de la configuración de inicio."</string>
+    <string name="cpuset">"Conjuntos de CPU"</string>
+
+    <!-- Performance Tweaks -->
+    <string name="spectrum">"Tweaks de rendimiento"</string>
+    <string name="spec_info">"Una adaptación de Spectrum Manager por frap129. \ Seleccione uno de los perfiles predefinidos disponibles."</string>
+    <string name="spec_balanced_summary">"El perfil de kernel predeterminado diseñado para un rendimiento fluido en tareas básicas mientras se mantiene una batería fantástica."</string>
+    <string name="spec_performance_summary">"Adaptado para el rendimiento de nivel superior en tareas estándar con muchas menos regresiones que Equilibrado, pero mantiene la batería al limitar los gráficos."</string>
+    <string name="spec_battery_summary">"El perfil ultraconservador que permite que el rendimiento se vea afectado para lograr una batería de larga duración."</string>
+    <string name="spec_gaming_summary">"Idéntico al rendimiento en la mayoría de las áreas además del rendimiento de los Gráficos desbloqueados."</string>
+
+    <!-- Custom Controls -->
+    <string name="welcome">"Bienvenido"</string>
+    <string name="custom_controls_summary">"En esta sección, puede crear un controlador personalizado para cualquier función, que aún no se ha agregado oficialmente a esta aplicación. &lt;a href="https://smartpack.github.io/spkm/customcontrols/">Documento&lt;a>"</string>
+    <string name="custom_controls_message">"Básicamente, puede crear un controlador personalizado para cualquier ruta sysfs existente, siempre que tenga instalado un Administrador de archivos raíz compatible. Sin embargo, tenga en cuenta que esta característica es demasiado poderosa para dañar su dispositivo.
+
+        *** UTILICE BAJO SU PROPIO RIESGO ***"</string>
+
+    <!-- Backup -->
+
+    <!-- Build prop Editor -->
+
+    <!-- Profile -->
+    <string name="apply">"Aplicar"</string>
+
+    <!-- Script Manager -->
+    <string name="scripts_manager_summary">"En esta sección, puede crear, importar, editar y ejecutar fácilmente cualquier script de shell con el formato adecuado"</string>
+    <string name="scripts_onboot_summary">"Si habilita este modificador, todos los scripts enumerados en esta página se ejecutarán en el arranque."</string>
+    <string name="script_executed">"%s ejecutado con éxito!"</string>
+    <string name="exceute_question">"Ejecutar %s?"</string>
+    <string name="remove_script_question">"%s también se eliminará del Administrador de secuencias de comandos.
+
+        ¿Estás seguro?"</string>
+    <string name="script_exists">"A script named %s ya existe! Abortar"</string>
+    <string name="executing">"Ejecutando"</string>
+    <string name="share_script">"Para aplicar este script, simplemente importe este archivo en 'SmartPack-Kernel Manager -&gt; Script Manager -&gt; Importar'."</string>
+
+    <!-- On Boot -->
+    <string name="on_boot_welcome_summary">"Esta sección le muestra qué cosas sucederán cuando su dispositivo se inicie. Si está en blanco, no pasará nada después del arranque."</string>
+    <string name="delete_question">"Eliminar %s?"</string>
+    <string name="disable_question">"Desactivar %s?"</string>
+
+    <!-- SmartPack -->
+    <string name="acquiring">"Adquiriendo información de actualización"</string>
+    <string name="donations">"Donaciones"</string>
+    <string name="donations_summary">"Donar al desarrollador"</string>
+    <string name="download">"Descargar"</string>
+    <string name="downloading_update">"Descargando %s"</string>
+    <string name="get_it_summary">"Obtener el último Kernel"</string>
+    <string name="reboot">"Reiniciar"</string>
+    <string name="rebooting">"Reiniciando"</string>
+    <string name="reboot_options">"Opciones de reinicio"</string>
+    <string name="reboot_options_summary">"Apaga o reinicia tu dispositivo"</string>
+    <string name="reboot_dialog">"Se recomienda reiniciar su dispositivo después de%s."</string>
+    <string name="reboot_normal">"Reinicio Normal"</string>
+    <string name="reboot_recovery">"Reiniciar en Recovery"</string>
+    <string name="reboot_bootloader">"Reiniciar en Bootloader"</string>
+    <string name="rebooting_message">"Reinicio en 5s"</string>
+
+    <!-- Update Channel -->
+    <string name="submit_failed">"¡Algunos de los campos necesarios están vacíos! Abortando."</string>
+    <string name="update_channel_create_warning">"!Los cambios realizados se perderán!"</string>
+    <string name="clear">"Limpiar todo"</string>
+    <string name="clear_message">"¡Todos los campos están vacíos! Abortando."</string>
+
+    <!-- Settings -->
+    <string name="open_settings">"Abrir ajustes"</string>
+    <string name="force_english">"Forzar la visualización del idioma inglés"</string>
+    <string name="dark_theme">"Tema oscuro"</string>
+    <string name="five_sec">"5 segundos"</string>
+    <string name="ten_sec">"10 segundos"</string>
+    <string name="twenty_sec">"20 segundos"</string>
+    <string name="fifty_sec">"50 segundos"</string>
+    <string name="enable_onboot">"Activar al inicio"</string>
+    <string name="hide">"Ocultar"</string>
+    <string name="always_show">"Siempre mostrar"</string>
+    <string name="security">"Seguridad"</string>
+    <string name="biometric">"Autenticación biométrica"</string>
+    <string name="biometric_summary">"Use la autenticación biométrica para proteger SmartPack-Kernel Manager."</string>
+    <string name="authenticate">"Autentificar"</string>
+    <string name="default_section">"Default Section"</string>
+    <string name="default_section_summary">"The default tab to be displayed when opening the app!"</string>
+    <string name="special_mentions">"Menciones especiales"</string>
+    <string name="source_code">"Código fuente"</string>
+    <string name="source_code_summary">"Ver el código fuente en GitHub"</string>
+    <string name="change_logs">"Lista de cambios"</string>
+    <string name="change_logs_summary">"Ver lista de cambios"</string>
+    <string name="playstore">"Google Play"</string>
+    <string name="playstore_summary">"Visitar página de Google play"</string>
+    <string name="donate_me_summary">"Apoyar el desarrollo de este proyecto"</string>
+    <string name="licence">"Licencia"</string>
+    <string name="licence_summary">"Ver GPL V3"</string>
+    <string name="share_app">"Compartir app"</string>
+    <string name="share_app_summary">"Comparte esta app con tus amigos"</string>
+    <string name="grarak">"Willi Ye"</string>
+    <string name="osm0sis">"Chris Renshaw"</string>
+
+    <!-- Contributors -->
+    <string name="no_internet">"!Por favor, revise su conexión a Internet!"</string>
+
+    <!-- FAQ -->
+    <string name="found_bugs_summary">"Resp. Proporcione tanta información como sea posible (como qué función, qué no funcionó, capturas de pantalla o logcat si es posible) y publíquela en la página de desarrolladores de xda. Alternativamente, también puede plantear un problema en la página de GitHub."</string>
+    <string name="can_i_contribute_summary">"Resp. Absolutamente. Cualquier tipo de contribución (Donaciones, Código, etc.) es muy bienvenida y muy apreciada. Visite la sección Acerca de para obtener más detalles."</string>
+</resources>

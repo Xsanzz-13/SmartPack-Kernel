@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="cyanogenmod.permission.PUBLISH_CUSTOM_TILE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:banner="@drawable/ic_banner"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true" >
+
+        <activity android:name=".activities.StartActivity" android:label="@string/smartpack"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+            android:name=".activities.StartActivityMaterial" android:label="@string/smartpack"
+            android:icon="@mipmap/ic_launcher_material"
+            android:enabled="false"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity android:name=".activities.MainActivity"
+            android:exported="false" />
+        <activity android:name=".activities.NavigationActivity"
+            android:exported="false" />
+        <activity android:name=".activities.TextActivity"
+            android:exported="false" />
+        <activity android:name=".activities.AdvancedIOActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ApplyScriptActivity"
+            android:exported="false" />
+        <activity android:name=".activities.BannerResizerActivity"
+            android:exported="false" />
+        <activity android:name=".activities.CPUBoostActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ScriptEditorActivity"
+            android:exported="false" />
+        <activity android:name=".activities.FlashingActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ForegroundActivity"
+            android:exported="false" />
+        <activity android:name=".activities.LaunchFragmentActivity"
+            android:exported="false" />
+        <activity android:name=".activities.NoRootActivity"
+            android:exported="false" />
+        <activity android:name=".activities.OverallActivity"
+            android:exported="false" />
+        <activity android:name=".activities.SecurityActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation|screenSize|navigation"
+            android:exported="false" />
+        <activity android:name=".activities.tools.profile.ProfileActivity"
+            android:exported="false" />
+        <activity android:name=".activities.tools.profile.ProfileEditActivity"
+            android:exported="false" />
+        <activity android:name=".activities.TerminalActivity"
+            android:exported="false" />
+        <activity android:name=".activities.ToolsActivity"
+            android:exported="false" />
+        <activity android:name=".activities.TunablesActivity"
+            android:exported="false" />
+        <activity android:name=".activities.UpdateChannelActivity"
+            android:exported="false" />
+        <activity android:name=".activities.WebViewActivity"
+            android:exported="false" />
+        <activity android:name=".views.NavHeaderView$MainHeaderActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <receiver
+            android:name=".services.boot.OnBootReceiver"
+            android:exported="true"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.boot.ApplyOnBootService" />
+        <receiver android:name=".services.boot.ApplyOnBoot$CancelReceiver" />
+
+        <!-- Profile Widget -->
+        <receiver android:name=".services.profile.Widget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/profile_widget" />
+        </receiver>
+
+        <service
+            android:name=".services.profile.Widget$WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <!-- CM SDK -->
+        <receiver android:name=".services.profile.Tile"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name=".action.ACTION_TOGGLE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- DashClock -->
+        <service
+            android:name=".services.DashClock"
+            android:icon="@drawable/ic_launcher_preview"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+
+            <meta-data
+                android:name="protocolVersion"
+                android:value="1" />
+        </service>
+
+        <!-- Tasker -->
+        <activity android:name=".activities.tools.profile.ProfileTaskerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".services.profile.Tasker"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Spectrum Tile -->
+        <service
+            android:name=".tiles.SpectrumTile"
+            android:icon="@drawable/ic_spectrum_logo"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:label="@string/profileTile"
+            android:exported="true"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
+        <!-- Script Tile -->
+        <service
+            android:name=".tiles.ScriptTile"
+            android:icon="@drawable/ic_console"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:label="@string/script"
+            android:exported="true"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
+        <!-- Klapse Tile -->
+        <service
+            android:name=".tiles.KLapseTile"
+            android:icon="@drawable/ic_klapse"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:label="@string/klapse"
+            android:exported="true"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
