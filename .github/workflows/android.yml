@@ -34,7 +34,13 @@ jobs:
         env:
           KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
         run: |
-          echo "$KEYSTORE_BASE64" | base64 --decode > app/sp.jks
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > app/sp.jks
+          echo "Keystore size:"
+          wc -c app/sp.jks
+          echo "Keystore SHA-256:"
+          sha256sum app/sp.jks
+          echo "Keystore check:"
+          keytool -list -keystore app/sp.jks -storepass smartpack
 
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
